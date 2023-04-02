@@ -1,0 +1,13 @@
+CREATE USER ubuntu;
+create database ubuntu;
+
+Login as root 
+
+set root password by
+sudo passwd root
+
+Login as root and then login to postgres 
+
+alter role ubuntu WITH CREATEDB;
+alter role ubuntu WITH SUPERUSER;
+alter role ubuntu with CREATEROLE;
